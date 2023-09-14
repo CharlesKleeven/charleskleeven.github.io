@@ -1,0 +1,20 @@
+.contact-container {
+    display: flex;
+    justify-content: center; /* Horizontally center-align */
+    height: 100vh; /* Adjust the height as needed */
+    padding: 20px;
+  }
+ 
+  .form-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+  }
+
+  /* Additional styles for form elements */
+  .form-group {
+    margin: 10px;
+    text-align: center; /* Center-align text within form groups if needed */
+  }
+  
+  /* Adjust the styles as needed */
+  
