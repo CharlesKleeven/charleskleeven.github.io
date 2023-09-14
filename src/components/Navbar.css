@@ -1,0 +1,116 @@
+:root {
+    --logo-color: rgb(56, 51, 35);
+    --nav-links-color: #34250b;
+    --background-color: #f8f8f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--logo-color);
+    padding: 10px;
+    text-align: right;
+    padding-right: 40px;
+}
+  
+.nav-link {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: var(--nav-links-color);
+    text-decoration: none;
+    font-size: 110%;
+}
+
+/* underlined when active */
+.nav-link.active::before {
+    transform: scaleX(1.2);
+  }
+
+.logo {
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: left;
+    text-align: bottom;
+    margin-right: 60px;
+}
+
+ul {
+    padding-top: 40px;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px; /* add spacing between items */
+}
+
+/* Underline hover animation */
+a {
+    position: relative;
+    text-decoration: none;
+}
+  
+.nav-link:hover {
+    color: var(--nav-links-color);
+}
+  
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 84%;
+    height: 1px;
+    bottom: -3px;
+    left: 8%;
+    background-color: var(--nav-links-color);
+    transform: scaleX(0);
+    transition: transform 0.35s ease;
+}
+  
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* Dropdown menus */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 25px;
+  }
+  
+/* hide by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+}
+  
+.dropdown-content a {
+    color: var(--nav-links-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ebebeb;
+    border-radius: 20px;
+}
+  
+/* display on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
