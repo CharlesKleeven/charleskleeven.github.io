@@ -10,7 +10,7 @@
     align-items: center;
     background-color: var(--background-color);
     color: var(--logo-color);
-    padding: 10px;
+    padding: 20px;
     text-align: right;
     padding-right: 40px;
 }
@@ -25,7 +25,7 @@
 
 /* underlined when active */
 .nav-link.active::before {
-    transform: scaleX(1.2);
+    transform: scaleX(1.125);
 }
 
 
@@ -37,6 +37,7 @@
     text-align: left;
     text-align: bottom;
     margin-right: 60px;
+    padding-bottom: 10px;
 }
 
 ul {
