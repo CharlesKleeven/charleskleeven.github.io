@@ -1,0 +1,49 @@
+:root
+{
+  --nav-links-color: #34250b;
+}
+
+.gallery-banner img
+{
+    padding-top: 20px;
+    width: 100vw;
+    max-height: 30vh; /* Set the maximum height to 50% of the viewport height */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    object-position: center 30%;
+    padding-bottom: 40px;
+}
+
+.gallery-header
+{
+  font-family: 'Exo 2, sans-serif';
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 2em;
+  color: var(--nav-links-color);
+  border-bottom: 6px double var(--nav-links-color);
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 40px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items at the top */
+}
+
+  
+.gallery-item {
+  flex: 0 0 calc(33.333% - 20px); /* Allow items to grow up to their max-width */
+  margin-bottom: 20px; /* Add spacing between rows */
+  margin-right: 10px; /* Add spacing between items */
+  overflow: hidden; /* Ensure images don't overflow their containers */
+}
+
+.gallery-item img {
+  width: auto; 
+  height: 500px; 
+}

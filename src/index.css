@@ -1,6 +1,6 @@
 :root
 {
-  --main-background:  #f8f8f5;; 
+  --main-background:  #f8f8f5;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 200px;
 }
 
 code {

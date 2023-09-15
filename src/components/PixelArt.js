@@ -1,11 +1,11 @@
 import React from 'react';
-import './PixelArt.css'; 
-import templeImage from '../images/temple.png';
+import './Gallery.css'; 
+import templeImage from '../images/temple.png'; 
 
 
 function PixelArt() {
   return (
-    <div className="pixel-art-banner">
+    <div className="gallery-banner">
       <img src={templeImage} alt="Pixel Art"/>
     </div>
   );
