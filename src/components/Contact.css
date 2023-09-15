@@ -8,7 +8,7 @@
     padding: 20px;
     box-shadow: 0px 0px 6px 2px rgba(33, 33, 31, 0.319); /* Add a shadow for depth */
     border-radius: 20px; /* Adjust the border-radius for rounded corners */
-    background-color: rgba(243, 240, 235, 0.453); /* dropdown menu color */
+    background-color: #f9f9f9; /* dropdown menu color */
     color: #34250b; /* navbar text color */
     text-align: center;
 }
@@ -62,7 +62,7 @@ textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #f9f9f9; /* Add a semi-transparent background to form fields */
+    background-color: #efeeea5b; /* Add a semi-transparent background to form fields */
     border: 1px solid #432c0441; /* Outline the text boxes */
 }
 
