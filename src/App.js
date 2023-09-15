@@ -14,11 +14,11 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route ath='/' component={<Home/>} />
-          <Route path="/illustration" component={Illustration} />
-          <Route path="/pixel-art" component={PixelArt} />
-          <Route path="/character-design" component={CharacterDesign} />
-          <Route path="/concept" component={Concept} />
+          <Route path='/' element={<Home />} />
+          <Route path="/illustration" element={<Illustration />} />
+          <Route path="/pixel-art" element={<PixelArt />} />
+          <Route path="/character-design" element={<CharacterDesign />} />
+          <Route path="/concept" element={<Concept />} />
         </Routes>
       </div>
     </Router>
