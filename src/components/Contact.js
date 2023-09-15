@@ -2,33 +2,50 @@ import React from 'react';
 import './Contact.css';
 
 function Contact() {
-  return (
+    return (
     <div className="contact-container">
-      <div className="header-container">
-        <h2>Let's get in touch!</h2>
-        <h3>Reach out to me for anything lol. You can also use my email.</h3>
-      </div>
-      <form className="form-container">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" required />
+        <div className="header-container">
+            <h2>Contact me</h2>
+            <div className="header-message">
+                <p> If you are interested in working with me or just have questions and comments,
+                    feel free to fill out the form below.</p>
+                <p> Alternatively, you can reach me through my email at
+                xxxxx@gmail.com.</p>
+            </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="text" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+
+        <form className="form-container">
+            <div className="name-group">
+                <div className="form-group">
+                    <label htmlFor="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" unrequired />
+                </div>
+            </div>
+
+
+            <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="text" id="email" name="email" required />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
     </div>
-  );
+    );
 }
 
 export default Contact;

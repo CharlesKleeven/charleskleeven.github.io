@@ -26,10 +26,10 @@ function Illustration() {
       // Fan illustration
       const [fanIllustrationData] = useState([
         {
-            imageSrc: rhondaImage,
+            imageSrc: shhhImage,
         },
         {
-            imageSrc: shhhImage,
+            imageSrc: rhondaImage,
         },
         {
             imageSrc: yukyoStationImage,
@@ -57,7 +57,7 @@ function Illustration() {
         <div className="gallery-container">
             {fanIllustrationData.map((item, index) => (
                 <div className="gallery-item" key={index}>
-                    <img src={item.imageSrc} alt="missing" />
+                    <img src={item.imageSrc} alt="missing"/>
                 </div>
             ))}
         </div>

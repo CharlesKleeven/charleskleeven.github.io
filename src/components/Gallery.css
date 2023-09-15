@@ -1,20 +1,17 @@
-:root
-{
+:root {
   --nav-links-color: #34250b;
 }
 
-.gallery-banner img
-{
-    padding-top: 20px;
-    width: 100vw;
-    max-height: 30vh; /* Set the maximum height to 50% of the viewport height */
-    object-fit: cover; /* Maintain the aspect ratio and cover the container */
-    object-position: center 30%;
-    padding-bottom: 40px;
+.gallery-banner img {
+  padding-top: 20px;
+  width: 100vw;
+  max-height: 30vh; /* Set the maximum height to 30% of the viewport height */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  object-position: center 30%;
+  padding-bottom: 40px;
 }
 
-.gallery-header
-{
+.gallery-header {
   font-family: 'Exo 2, sans-serif';
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -33,17 +30,26 @@
   flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
   align-items: flex-start; /* Align items at the top */
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-  
+.gallery-row {
+  display: flex;
+  width: 100%;
+}
+
 .gallery-item {
   flex: 0 0 calc(33.333% - 20px); /* Allow items to grow up to their max-width */
   margin-bottom: 20px; /* Add spacing between rows */
   margin-right: 10px; /* Add spacing between items */
   overflow: hidden; /* Ensure images don't overflow their containers */
+  display: flex; /* Use flexbox to match image heights */
+  flex-direction: column; /* Stack image and description vertically */
 }
 
 .gallery-item img {
-  width: auto; 
-  height: 500px; 
+  flex: 1; /* Allow images to grow vertically within the flex container */
+  width: 100%; /* Ensure the image width scales with the container */
+  height: auto; /* Maintain the image's aspect ratio */
 }
