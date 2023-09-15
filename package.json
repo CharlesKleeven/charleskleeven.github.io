@@ -1,6 +1,6 @@
 {
-  "homepage": "https://charleskleeven.github.io,
-  "name": "portfolio",
+  "homepage": "https://charleskleeven.github.io",
+  "name": "charleskleeven.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
