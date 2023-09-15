@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-website",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "homepage": "https://charleskleeven.github.io/CharlesKleeven.github.io",
+    "homepage": "https://charleskleeven.github.io/portfolio",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
