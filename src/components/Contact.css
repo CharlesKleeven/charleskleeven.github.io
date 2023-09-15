@@ -44,6 +44,12 @@
 .form-group {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.required-label {
+    font-size: small;
+    opacity: 0.6;
 }
 
 
@@ -54,17 +60,16 @@ label {
 input[type="text"],
 textarea {
     padding: 10px;
-    border-color: #432c04;
-    border-style: 1px solid black;
     border: none;
     border-radius: 5px;
     background-color: #f9f9f9; /* Add a semi-transparent background to form fields */
+    border: 1px solid #432c0441; /* Outline the text boxes */
 }
 
 button[type="submit"] {
-    background-color: #625a13; /* Customize the button background color */
-    border-color: #34250b;
-    color: #fff; /* Customize the button text color */
+    background-color: #625a13; /* button color */
+    color: #f9f9f9; /* button text */
+    font-size: medium;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
